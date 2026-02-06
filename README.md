@@ -1,1 +1,1 @@
-# College-Event-
+# College-Event-Managing-Project
