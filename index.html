@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events Hub - Fergusson College</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Banner -->
+  <header>
+    <div class="hero">
+      <img src="images/banner.jpg" alt="Fergusson College Campus">
+      <div class="hero-text">
+        <h1>Campus Events Hub</h1>
+        <p>Discover and join exciting events, guest lectures, and fests happening at Fergusson College.</p>
+        <button id="submitEvent">+ Submit Event</button>
+        <button id="browseEvents">Browse Events</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Events Section -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <nav>
+        <button class="tab" data-filter="all">All Events</button>
+        <button class="tab" data-filter="ongoing">Ongoing</button>
+        <button class="tab" data-filter="upcoming">Upcoming</button>
+      </nav>
+      <div id="eventList"></div>
+    </section>
+
+
+<aside>
+  <img src="images/login-icon.png" alt="Login Icon" style="width:60px; margin-bottom:15px;">
+  <h3>Sign In</h3>
+  <form id="loginForm">
+    <label>Username</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <button type="submit">Sign In</button>
+  </form>
+  <p class="signup-text">Don’t have an account? <a href="#">Create Account</a></p>
+</aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Fergusson College | Campus Events Hub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

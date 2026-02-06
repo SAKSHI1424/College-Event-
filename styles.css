@@ -1,0 +1,159 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* Hero Banner */
+header .hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+header .hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+header .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  background: #B22222; /* Fergusson brick red */
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #8B0000;
+}
+
+/* Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#events {
+  flex: 2;
+  margin-right: 20px;
+}
+
+aside {
+  flex: 1;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+aside:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+aside h3 {
+  margin-bottom: 20px;
+  color: #1E3A8A; /* Deep blue */
+}
+
+aside form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+aside label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+aside input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+aside input:focus {
+  border: 1px solid #4a90e2;
+  box-shadow: 0 0 6px rgba(74,144,226,0.4);
+}
+
+aside button {
+  padding: 12px;
+  background: #B22222; /* Fergusson brick red */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+aside button:hover {
+  background: #8B0000;
+}
+
+.signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-text a {
+  color: #1E3A8A;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Event Cards */
+.event-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  border: 2px solid #1E3A8A; /* Deep blue */
+}
+
+/* Footer */
+footer {
+  background: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
